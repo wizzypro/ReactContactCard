@@ -1,14 +1,14 @@
 import React from "react";
-import Contact from "../components/contact/Contact";
+import ContactCard from "./contact/ContactCard";
 import contacts from "../contacts.js";
-import Avatar from "../components/Avatar";
+import Avatar from "./contact/Avatar";
 
 function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
       <Avatar imgSrc={contacts[1].imgURL} imgAlt={contacts[1].nam} />
-      <Contact
+      <ContactCard
         name={contacts[0].name}
         imgSrc={contacts[0].imgURL}
         imgAlt={contacts[0].name}
@@ -16,7 +16,7 @@ function App() {
         email={contacts[0].email}
       />
 
-      <Contact
+      <ContactCard
         name={contacts[1].name}
         imgSrc={contacts[1].imgURL}
         imgAlt={contacts[1].name}
@@ -24,7 +24,7 @@ function App() {
         email={contacts[1].email}
       />
 
-      <Contact
+      <ContactCard
         name={contacts[2].name}
         imgSrc={contacts[2].imgURL}
         imgAlt={contacts[2].name}

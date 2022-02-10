@@ -1,7 +1,8 @@
 import React from "react";
-import Avatar from "../Avatar";
+import Avatar from "./Avatar";
+import DetailCard from "./DetailCard";
 
-let Contact = (props) => {
+let ContactCard = (props) => {
   return (
     <div>
       <div className="card">
@@ -10,12 +11,12 @@ let Contact = (props) => {
           <Avatar imgSrc={props.imgSrc} imgAlt={props.imgAlt} />
         </div>
         <div className="bottom">
-          <p className="info">{props.tel}</p>
-          <p className="info">{props.email}</p>
+          <DetailCard detailInfo={props.tel} />
+          <DetailCard detailInfo={props.email} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default ContactCard;
