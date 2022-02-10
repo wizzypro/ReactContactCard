@@ -1,11 +1,13 @@
 import React from "react";
 import Contact from "../components/contact/Contact";
 import contacts from "../contacts.js";
+import Avatar from "../components/Avatar";
 
 function App() {
   return (
     <div>
       <h1 className="heading">My Contacts</h1>
+      <Avatar imgSrc={contacts[1].imgURL} imgAlt={contacts[1].nam} />
       <Contact
         name={contacts[0].name}
         imgSrc={contacts[0].imgURL}

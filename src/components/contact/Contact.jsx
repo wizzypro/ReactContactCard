@@ -1,4 +1,5 @@
 import React from "react";
+import Avatar from "../Avatar";
 
 let Contact = (props) => {
   return (
@@ -6,7 +7,7 @@ let Contact = (props) => {
       <div className="card">
         <div className="top">
           <h2 className="name">{props.name}</h2>
-          <img className="circle-img" src={props.imgSrc} alt={props.imgAlt} />
+          <Avatar imgSrc={props.imgSrc} imgAlt={props.imgAlt} />
         </div>
         <div className="bottom">
           <p className="info">{props.tel}</p>
